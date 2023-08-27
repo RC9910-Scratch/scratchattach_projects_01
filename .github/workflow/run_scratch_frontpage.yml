@@ -1,5 +1,5 @@
 name: run python scripts
-on: push
+on: workflow_dispatch
 
 jobs:
   name:
