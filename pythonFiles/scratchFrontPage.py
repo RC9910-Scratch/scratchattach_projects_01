@@ -142,7 +142,7 @@ def addFunct(funct):
     clientScratch.add_request(funct)
     clientTw.add_request(funct)
 
-def run()
+def run():
     addFunct(ping)
     addFunct(loadFeaturedProject)
     addFunct(loadFeaturedStudios)
