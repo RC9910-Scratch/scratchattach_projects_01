@@ -19,6 +19,6 @@ jobs:
           python install -r Scracth_FrontPage/requirements.txt
 
       - name: run scratch frontpage
-        run: python Scratch_FrontPage/main.py
+        run: main.py
         env:
           SESSION: secrets.SESSION
