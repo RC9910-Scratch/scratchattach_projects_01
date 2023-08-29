@@ -40,13 +40,14 @@ def getImgData(url, res, resize):
     return imgData
 
 
-sessId = os.getenv('COOKIE')
+def setup()
+    sessId = os.getenv('COOKIE')
 
-session = scratch3.Session(sessId, username='RandomCoder9910')
-connScratch = session.connect_cloud('882425161')
-clientScratch = scratch3.CloudRequests(connScratch)
-connTw = scratch3.TwCloudConnection(project_id='882425161')
-clientTw = scratch3.TwCloudRequests(connTw)
+    session = scratch3.Session(sessId, username='RandomCoder9910')
+    connScratch = session.connect_cloud('882425161')
+    clientScratch = scratch3.CloudRequests(connScratch)
+    connTw = scratch3.TwCloudConnection(project_id='882425161')
+    clientTw = scratch3.TwCloudRequests(connTw)
 
 def ping():
     print('User is pinging the server')
@@ -141,14 +142,14 @@ def addFunct(funct):
     clientScratch.add_request(funct)
     clientTw.add_request(funct)
 
+def run()
+    addFunct(ping)
+    addFunct(loadFeaturedProject)
+    addFunct(loadFeaturedStudios)
+    addFunct(loadSDS)
+    addFunct(loadTopLoved)
+    addFunct(loadTopRemixed)
+    addFunct(loadImg)
 
-addFunct(ping)
-addFunct(loadFeaturedProject)
-addFunct(loadFeaturedStudios)
-addFunct(loadSDS)
-addFunct(loadTopLoved)
-addFunct(loadTopRemixed)
-addFunct(loadImg)
-
-clientScratch.run(thread=True)
-clientTw.run()
+    clientScratch.run(thread=True)
+    clientTw.run(therad=True)
