@@ -16,9 +16,9 @@ jobs:
       - name: get packages
         run: |
           python -m pip install --upgrade pip
-          python install -r Scracth_FrontPage/requirements.txt
+          python install -r pythonFiles/requirements.txt
 
       - name: run scratch frontpage
-        run: main.py
+        run: pythonFiles/main.py
         env:
           SESSION: secrets.SESSION
