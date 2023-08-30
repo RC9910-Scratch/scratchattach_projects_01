@@ -1,11 +1,14 @@
 name: run python scripts
-on: push
+on:
+  schedule:
+    - cron: '*/27 * * * *'
+  workflow_dispatch:
 
 jobs:
   name:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repo
+      - name: checkout repo contents
         uses: actions/checkout@v2
 
       - name: setup python
