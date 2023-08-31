@@ -150,4 +150,4 @@ addFunct(loadTopRemixed)
 addFunct(loadImg)
 
 clientScratch.run(thread=True)
-clientTw.run(therad=True)
+clientTw.run(thread=True)
