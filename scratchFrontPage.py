@@ -128,7 +128,7 @@ def loadImg(type, id, res):
         resize = False
     return getImgData(img, res, resize)
 
-def run()
+def run():
     sessId = os.getenv('COOKIE')
 
     session = scratch3.Session(sessId, username='RandomCoder9910')
