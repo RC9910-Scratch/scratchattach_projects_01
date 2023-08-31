@@ -40,7 +40,7 @@ def getImgData(url, res, resize):
     return imgData
 
 
-def setup()
+def setup():
     sessId = os.getenv('COOKIE')
 
     session = scratch3.Session(sessId, username='RandomCoder9910')
