@@ -19,8 +19,7 @@ jobs:
       - name: get packages
         run: |
           python -m pip install --upgrade pip
-          python pip install -U scratchattach
-          python pip install pillow
+          pip install -r requirements.txt
 
       - name: run main.py
         run: pythonFiles/main.py
