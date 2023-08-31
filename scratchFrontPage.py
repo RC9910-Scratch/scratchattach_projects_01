@@ -48,7 +48,6 @@ def setup():
     clientScratch = scratch3.CloudRequests(connScratch)
     connTw = scratch3.TwCloudConnection(project_id='882425161')
     clientTw = scratch3.TwCloudRequests(connTw)
-    return (clientScratch, clientTw)
 
 def ping():
     print('User is pinging the server')
@@ -143,9 +142,7 @@ def addFunct(funct):
     clientScratch.add_request(funct)
     clientTw.add_request(funct)
 
-def run(clientScratch, clientTw):
-    clientScratch = clientScratch
-    clientTw = clientTw
+def run():
     addFunct(ping)
     addFunct(loadFeaturedProject)
     addFunct(loadFeaturedStudios)
@@ -156,3 +153,6 @@ def run(clientScratch, clientTw):
 
     clientScratch.run(thread=True)
     clientTw.run(therad=True)
+
+setup()
+run()
