@@ -22,6 +22,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: run python scripts
-        run: python scratchFrontPage.py
+        run: python main.py
         env:
           SESSION: ".eJxVT0tPwzAM_i85byV9JtmNTUKTeAgmJOBUuY67hbbJ1HYMgfjvONIuu9nfy59_xWmi0cNAYiV24G0YNsHSaEwqxULUcJoPdZTUzrKi0iYvKpUzNdM0Ywidi85zGDuy14YGsCMfXREjPzuE2QWfXIgp2dGxv4Dri5hzAw9sQiNTxLJJM5kXSLLRrW1kmcuyygvIYbV9XH69dd8Pd132cv-q1vX2-N63_ea5PHNMH_bOL92Rk4xMslQnaZUlqSpiyR78_gT72JxvLYT9ZCDUsxvoJ_gI3w40crWbJzrXH_zc9WsHmA4xWKOGpjRKEyljNUhEbohG8a4AqVUIElrx9w8M3XQv:1qbQvA:eihxwcRRpXlRaqmWLtVNgu3wOyk"
