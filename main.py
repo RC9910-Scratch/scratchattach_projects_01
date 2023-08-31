@@ -1,8 +1,9 @@
 # Imports all projects
+import scratchattach as s3
 import scratchFrontPage as sfp
 
 # Sets up projects
-sfp.setup()
+sfpCS, sfpCT = sfp.setup()
 
 # Runs projects
-sfp.run()
+sfp.run(sfpCS, sfpCT)
