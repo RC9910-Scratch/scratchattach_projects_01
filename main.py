@@ -6,5 +6,6 @@ import time, sys
 # Runs projects
 sfp.run()
 
+print('All scripts have been run.')
 time.sleep(60*30)
 sys.exit(0)
