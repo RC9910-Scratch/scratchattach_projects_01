@@ -8,4 +8,5 @@ sfp.run()
 
 print('All scripts have been run.')
 time.sleep(60*30)
+print('30 mins have passed. Stopping script...')
 sys.exit(0)
