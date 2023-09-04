@@ -7,4 +7,4 @@ import time, sys
 sfp.run()
 
 time.sleep(60*30)
-sys.exit()
+sys.exit(0)
