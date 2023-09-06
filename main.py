@@ -7,6 +7,7 @@ import time, sys
 sfp.run()
 
 print('All scripts have been run.')
-time.sleep(60*30)
+time.sleep(1800)
 print('30 mins have passed. Stopping script...')
-sys.exit(0)
+pgid = os.getpgid(os.getpid())
+os.killpg(pgid, signal.SIGINT)
