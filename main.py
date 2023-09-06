@@ -1,7 +1,7 @@
 # Imports all projects
 import scratchattach as s3
 import scratchFrontPage as sfp
-import time, sys
+import time, os
 
 # Runs projects
 sfp.run()
